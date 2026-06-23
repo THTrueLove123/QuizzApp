@@ -4,10 +4,32 @@
  */
 package com.nguyentanhuy.themes;
 
+import javafx.scene.Scene;
+
 /**
  *
  * @author admin
  */
 public enum ThemeType {
-    DEAFAULT, DARK, LIGHT;
+    DEAFAULT {
+        @Override
+        public void updateThemes(Scene scene) {
+              ThemesManager.setFactory(new DefaultFactory());
+                ThemesManager.applyTheme(scene);
+        }
+    }, DARK {
+        @Override
+        public void updateThemes(Scene scene) {
+           ThemesManager.setFactory(new DarkFactory());
+                ThemesManager.applyTheme(scene);
+        }
+    }, LIGHT {
+        @Override
+        public void updateThemes(Scene scene) {
+            ThemesManager.setFactory(new LightFactory());
+                ThemesManager.applyTheme(scene);
+        }
+    };
+    public abstract void updateThemes(Scene scene);
+    
 }
