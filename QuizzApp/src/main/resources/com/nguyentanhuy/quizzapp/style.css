@@ -9,8 +9,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 .Container {
     -fx-background-color: lightblue;
-    -fx-text-align: center;
+    -fx-alignment: center;
     -fx-Spacing: 25;
+    -fx-padding: 10;
 }
 .Subject {
     -fx-font-size: 40;
