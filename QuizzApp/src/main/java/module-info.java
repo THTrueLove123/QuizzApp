@@ -6,4 +6,5 @@ module com.nguyentanhuy.quizzapp {
 
     opens com.nguyentanhuy.quizzapp to javafx.fxml;
     exports com.nguyentanhuy.quizzapp;
+    exports com.nguyentanhuy.pojo;
 }
