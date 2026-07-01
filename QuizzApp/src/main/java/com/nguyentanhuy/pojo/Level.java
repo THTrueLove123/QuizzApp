@@ -9,6 +9,8 @@ package com.nguyentanhuy.pojo;
  * @author ASUS
  */
 public class Level {
+
+    public static java.util.logging.Level SEVERE;
      private int id;
      private String name;
 
@@ -18,6 +20,11 @@ public class Level {
     }
 
     public Level() {
+    }
+
+    @Override
+    public String toString() {
+        return this.name; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
 
      

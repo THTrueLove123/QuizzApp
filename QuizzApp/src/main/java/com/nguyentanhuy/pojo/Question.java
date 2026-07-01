@@ -70,6 +70,8 @@ public class Question {
             return this;
         }
 
+      
+                
         public Question build() {
             return new Question(this);
         }
@@ -145,6 +147,7 @@ public class Question {
         this.level = level;
     }
 
+    
     /**
      * @return the category
      */
@@ -171,5 +174,11 @@ public class Question {
      */
     public void setChoices(List<Choice> choices) {
         this.choices = choices;
+    }
+
+    public static class Builder {
+
+        public Builder() {
+        }
     }
 }
